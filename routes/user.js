@@ -44,7 +44,7 @@ router.post('/signup', async (req, res) => {
     }
 });
 
-
+// login update through mail
        router.post('/login', async (req, res) => {
     try {
         console.log(req.body);

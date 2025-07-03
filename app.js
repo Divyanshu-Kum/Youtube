@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose')
 require('dotenv').config()
 const userRoute = require('./routes/user')
+const videoRoute = require('./routes/video')
 const bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
 
@@ -31,6 +32,7 @@ app.use(bodyParser.json())
 
 
 app.use('/user',userRoute)
+app.use('/video',videoRoute)
 
 
 // mongoose.connect(process.env.MONGO_URI)
